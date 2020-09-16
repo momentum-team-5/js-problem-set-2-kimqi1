@@ -6,16 +6,21 @@
 //
 // If the potential member is not in the array, return the array unchanged.
 // If the potential member is in the array, remove all instances of it from the array.
-function remove(array, item) {
-    let indexofItem = array.indexOf(item)
-    array.splice(indexofItem, 1)
-     
-    for (let i = 0; i < array.length; i++){
+//function remove (array, itemToRemove) {
+ //   let result = []
+   // for (let item of array) {
+     //   if (item !== itemToRemove) {
+       //     result.push(item)
+        //}
+    //}
+    //return result
+//}
 
-    let indexofItem = array.indexOf(item)
-    array.splice(indexofItem, 1)
-    }
-    return array
+function remove(array, itemToRemove){
+    let result = array.filter(function (item) {
+        return item !== itemToRemove
+    })
+    return result
 }
 
 
@@ -24,6 +29,7 @@ function remove(array, item) {
 
 // 3. Create a function called "sum" that takes an array of numbers and
 // returns the sum of those numbers.
+
 
 // 4. Create a function called "average" that takes an array of numbers
 // and returns the average of those numbers.
