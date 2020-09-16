@@ -2,9 +2,22 @@
 // member of the array, and returns a new array with that member removed.
 // For example, `remove(['Cadence', 'Ordel', 'Marion'], 'Marion')` results
 // in `['Cadence', 'Ordel']`.
+
 //
 // If the potential member is not in the array, return the array unchanged.
 // If the potential member is in the array, remove all instances of it from the array.
+function remove(array, item) {
+    let indexofItem = array.indexOf(item)
+    array.splice(indexofItem, 1)
+     
+    for (let i = 0; i < array.length; i++){
+
+    let indexofItem = array.indexOf(item)
+    array.splice(indexofItem, 1)
+    }
+    return array
+}
+
 
 // 2. Revisit your "remove" function. Make sure that it does not change the original
 // array but instead returns a new array.
